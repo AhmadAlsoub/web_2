@@ -1,0 +1,50 @@
+VM107:1 Console was cleared
+undefined
+console.log(" Welcome to JavaScript Console Lab!");
+VM138:1  Welcome to JavaScript Console Lab!
+undefined
+let score = 100;
+const PI = 3.14159;
+var username = "DevExplorer";
+undefined
+console.log(`Score: ${score}, PI: ${PI}, User: ${username}`);
+
+VM146:1 Score: 100, PI: 3.14159, User: DevExplorer
+undefined
+const circleArea = (radius) => Math.PI * radius ** 2;
+console.log("Area of circle (r=5):", circleArea(5));
+VM150:2 Area of circle (r=5): 78.53981633974483
+undefined
+let userAge = prompt("How old are you?");
+if (userAge >= 18) console.log(" Access granted!");
+else console.log("❌ Sorry, adults only.");
+
+VM154:2  Access granted!
+undefined
+let dayNum = parseInt(prompt("Enter a number (1-7):"));
+switch (dayNum) {
+ case 1: console.log("Sunday "); break;
+ case 2: console.log("Monday "); break;
+ default: console.log("Invalid input!");
+}
+VM158:3 Sunday 
+undefined
+for (let i = 2; i <= 10; i += 2) {
+ console.log(`Even number: ${i}`);
+}
+VM162:2 Even number: 2
+VM162:2 Even number: 4
+VM162:2 Even number: 6
+VM162:2 Even number: 8
+VM162:2 Even number: 10
+undefined
+let fruits = ["Apple", "Banana", "Orange"];
+fruits.push("Grapes");
+console.log("Second fruit:", fruits[1]);
+VM168:3 Second fruit: Banana
+undefined
+let userSettings = new Map();
+userSettings.set("theme", "dark");
+console.log("Current theme:", userSettings.get("theme"));
+VM172:3 Current theme: dark
+undefined
