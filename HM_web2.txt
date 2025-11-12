@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<P id="EX6"> </P>
+
+<h1>Kilometers to Miles Converter</h1>
+
+  <div class="converter">
+    <label for="Input_KM">enter kilometers</label>
+    <input type="number" id="Input_KM" placeholder="enter kilometers">
+
+    <button id="convert_btn" onclick="convert_to_miles()">Convert to Miles</button>
+    <button id="clear_btn" onclick="clear_fields()">Clear</button>
+
+    <p id="result"></p>
+
+    <script>
+     function convert_to_miles() {
+      var km = document.getElementById("Input_KM").value;
+
+      if (km === "" || isNaN(km) || km < 0) {
+        alert("please no negative number please postive");
+        return;
+      }
+
+      var miles = km * 0.621371;
+      document.getElementById("result").textContent = 
+        km + " kilometers = " + miles.toFixed(2) + " miles";
+      
+      confirm("Do you want to continue?");
+    }//confirem
+
+    function clear_fields() {
+      document.getElementById("Input_KM").value = "";
+      document.getElementById("result").textContent = "";
+    }
+
+     const inputKm = prompt("Enter the number of kilometers:");
+    if (inputKm !== null && inputKm !== "") {
+      document.getElementById("kmInput").value = inputKm;
+    }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
